@@ -1,6 +1,8 @@
 {
   "homepage": "https://react-qr-code-reader.netlify.app/?path=/docs/qrreader-reader--docs",
-  "repository": { "url": "https://github.com/JamDev0/react-qr-code-reader" },
+  "repository": {
+    "url": "https://github.com/JamDev0/react-qr-code-reader"
+  },
   "name": "reactjs-qr-code-reader",
   "type": "module",
   "exports": {
@@ -19,8 +21,8 @@
   ],
   "version": "1.0.1",
   "scripts": {
-    "build": "vite build && npm run build:css",
-    "build:css": "tailwindcss -m -i ./src/styles/tailwind.css -o ./dist/styles.css",
+    "build": "npm run build:css && vite build",
+    "build:css": "tailwindcss -m -i ./src/styles/tailwind.css -o ./src/index.css",
     "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/styles/tailwind.css -o ./src/index.css",
     "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
@@ -59,13 +61,23 @@
     "eslint-plugin-storybook": "^0.6.15",
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.33",
+    "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^8.0.0-alpha.15",
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-dts": "^3.7.2",
+    "vite-plugin-libcss": "^1.1.1",
     "vite-tsconfig-paths": "^4.3.1"
   },
-"keywords": ["react", "qrcode", "qr code", "qrcode-reader", "qrcode-scanner", "qr code reader", "qr code scanner"]
+  "keywords": [
+    "react",
+    "qrcode",
+    "qr code",
+    "qrcode-reader",
+    "qrcode-scanner",
+    "qr code reader",
+    "qr code scanner"
+  ]
 }
