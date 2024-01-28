@@ -1,4 +1,4 @@
-name: Deploy StoryBook to GitHub Pages
+name: Deploy StoryBook to GitHub Pages.
 
 on: 
   push:
