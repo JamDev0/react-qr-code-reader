@@ -25,6 +25,7 @@
     "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/styles/tailwind.css -o ./src/index.css",
     "prepublishOnly": "npm run build",
+    "predeploy": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static"
   },
   "dependencies": {
