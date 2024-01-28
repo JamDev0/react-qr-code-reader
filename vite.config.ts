@@ -2,6 +2,7 @@ import react from "@vitejs/plugin-react";
 import { resolve } from 'path';
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import libcss from 'vite-plugin-libcss';
 import tsConfigPaths from "vite-tsconfig-paths";
 import * as packageJson from "./package.json";
 
@@ -13,6 +14,7 @@ export default defineConfig(() => ({
       include: ["src"],
       exclude: ["src/stories"]
     }),
+    libcss()
   ],
   build: {
     lib: {
@@ -30,7 +32,7 @@ export default defineConfig(() => ({
         globals: {
           react: 'React'
         }
-      }
+      },
     },
     optimizeDeps: {
       exclude: Object.keys(packageJson.peerDependencies),
