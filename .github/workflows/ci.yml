@@ -44,10 +44,10 @@ jobs:
           npm ci 
           
     - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '~/app/react-qr-code-reader/storybook-static'
+      uses: actions/upload-pages-artifact@v3
+      with:
+        # Upload entire repository
+        path: '~/app/react-qr-code-reader/storybook-static'
 
     - name: Deploy to GitHub Pages
       id: deployment
