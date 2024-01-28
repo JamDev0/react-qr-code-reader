@@ -1,20 +1,11 @@
-name: Deploy StoryBook to GitHub Pages.
+name: Deploy StoryBook to GitHub Pages
 
 on: 
   push:
     branches: [ main ]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs: 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -42,6 +33,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
+        # Upload entire repository
         path: './storybook-static'
 
     - name: Deploy to GitHub Pages
