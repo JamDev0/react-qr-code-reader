@@ -65,5 +65,6 @@
     "vite": "^5.0.8",
     "vite-plugin-dts": "^3.7.2",
     "vite-tsconfig-paths": "^4.3.1"
-  }
+  },
+"keywords": ["react", "qrcode", "qr code", "qrcode-reader", "qrcode-scanner", "qr code reader", "qr code scanner"]
 }
