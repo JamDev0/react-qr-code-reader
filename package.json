@@ -1,6 +1,6 @@
 {
   "homepage": "http://JamDev0.github.io/react-qr-code-reader",
-  "name": "react-qr-code-reader",
+  "name": "reactjs-qr-code-reader",
   "type": "module",
   "exports": {
     ".": {
