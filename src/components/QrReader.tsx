@@ -1,10 +1,9 @@
-'use client';
-
 import { BrowserQRCodeReader, IScannerControls } from '@zxing/browser';
 import { Result } from '@zxing/library';
-import { FC, HTMLAttributes, SVGProps, useEffect, useMemo, useRef, useState } from 'react';
+import React, { FC, HTMLAttributes, SVGProps, useEffect, useMemo, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import adapter from 'webrtc-adapter';
+React
 adapter;
 
 export interface QrReaderProps extends HTMLAttributes<HTMLDivElement> {
