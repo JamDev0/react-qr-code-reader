@@ -2,13 +2,15 @@
 
 Read QrCodes with the user's camera. Simple, customizable. Implements [zxing-js/browser](https://github.com/zxing-js/browser).
 
+[Check out the Storybook!](react-qr-code-reader.netlify.app/)
+
 ---
 
 ## Table of Contents
 
 1. [Installation](#Installation)
 2. [Usage](#Usage)
-3. [Components Props](<#Components Props>)
+3.  [Components Props](<#Components Props>)
 4. [License](#License)
 
 ---
