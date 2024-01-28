@@ -1,5 +1,6 @@
 {
-  "homepage": "http://JamDev0.github.io/react-qr-code-reader",
+  "homepage": "https://react-qr-code-reader.netlify.app/?path=/docs/qrreader-reader--docs",
+  "repository": { "url": "https://github.com/JamDev0/react-qr-code-reader" },
   "name": "reactjs-qr-code-reader",
   "type": "module",
   "exports": {
@@ -16,7 +17,7 @@
   "files": [
     "dist"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "vite build && npm run build:css",
     "build:css": "tailwindcss -m -i ./src/styles/tailwind.css -o ./dist/styles.css",
