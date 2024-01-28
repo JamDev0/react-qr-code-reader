@@ -11,6 +11,7 @@ export default defineConfig(() => ({
     tsConfigPaths(),
     dts({
       include: ["src"],
+      exclude: ["src/stories"]
     }),
   ],
   build: {
@@ -23,11 +24,19 @@ export default defineConfig(() => ({
           format === "cjs" ? "cjs" : "es.js"
         }`,
     },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React'
+        }
+      }
+    },
     optimizeDeps: {
       exclude: Object.keys(packageJson.peerDependencies),
     },
     esbuild: {
       minify: true,
     },
-  }
+  },
 }));
