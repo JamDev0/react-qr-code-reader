@@ -16,7 +16,7 @@
   "files": [
     "dist"
   ],
-  "version": "1.0.1",
+  "version": "1.0.0",
   "scripts": {
     "build": "vite build && npm run build:css",
     "build:css": "tailwindcss -m -i ./src/styles/tailwind.css -o ./dist/styles.css",
