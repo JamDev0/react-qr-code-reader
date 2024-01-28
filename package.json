@@ -51,10 +51,15 @@
     "eslint-plugin-storybook": "^0.6.15",
     "postcss": "^8.4.33",
     "storybook": "^8.0.0-alpha.15",
+    "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-dts": "^3.7.2",
     "vite-tsconfig-paths": "^4.3.1"
+  },
+  "dependencies": {
+    "@zxing/browser": "^0.1.4",
+    "webrtc-adapter": "^8.2.3"
   }
 }
