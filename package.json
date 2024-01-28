@@ -1,11 +1,11 @@
 {
   "name": "react-qr-code-reader",
   "type": "module",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/react-component-library.cjs",
-      "import": "./dist/react-component-library.es.js"
+      "require": "./dist/react-qr-code-reader.cjs",
+      "import": "./dist/react-qr-code-reader.es.js",
+      "types": "./dist/index.d.ts"
     },
     "./styles.css": {
       "require": "./dist/styles.css",
@@ -24,6 +24,10 @@
     "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/styles/tailwind.css -o ./src/index.css",
     "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@zxing/browser": "^0.1.4",
+    "webrtc-adapter": "^8.2.3"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -57,9 +61,5 @@
     "vite": "^5.0.8",
     "vite-plugin-dts": "^3.7.2",
     "vite-tsconfig-paths": "^4.3.1"
-  },
-  "dependencies": {
-    "@zxing/browser": "^0.1.4",
-    "webrtc-adapter": "^8.2.3"
   }
 }

@@ -1,5 +1,5 @@
 import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import { resolve } from 'path';
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import tsConfigPaths from "vite-tsconfig-paths";
@@ -16,10 +16,10 @@ export default defineConfig(() => ({
   build: {
     lib: {
       entry: resolve("src", "index.ts"),
-      name: "react-component-library",
+      name: "react-qr-code-reader",
       formats: ["es", "cjs"],
       fileName: (format) =>
-        `react-component-library.${
+        `react-qr-code-reader.${
           format === "cjs" ? "cjs" : "es.js"
         }`,
     },
@@ -29,5 +29,5 @@ export default defineConfig(() => ({
     esbuild: {
       minify: true,
     },
-  },
+  }
 }));
