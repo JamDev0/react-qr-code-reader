@@ -35,9 +35,10 @@ jobs:
         with:
           # Upload entire repository
           path: '~/app/react-qr-code-reader/storybook-static'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
 
     
       
