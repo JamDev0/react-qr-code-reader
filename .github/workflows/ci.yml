@@ -1,0 +1,48 @@
+name: Deploy StoryBook to GitHub Pages
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js environment on Virtual Machine
+      uses: actions/setup-node@v4
+      with: 
+        node-version: 20
+        cache: 'npm'
+
+    - name: Install dependencies on Virtual Machine
+      run: npm ci
+
+    - name: Run build on Virtual Machine
+      run: npm run build-storybook
+
+    - name: Install dependencies on Server 
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        script: |
+          cd ~/app/react-qr-code-reader
+          npm ci 
+          
+    - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '~/app/react-qr-code-reader/storybook-static'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+    
+      
+    
+
+    
+
+
