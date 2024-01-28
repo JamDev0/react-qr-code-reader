@@ -10,10 +10,6 @@
       "require": "./dist/react-qr-code-reader.cjs",
       "import": "./dist/react-qr-code-reader.es.js",
       "types": "./dist/index.d.ts"
-    },
-    "./styles.css": {
-      "require": "./dist/styles.css",
-      "default": "./dist/styles.css"
     }
   },
   "files": [
