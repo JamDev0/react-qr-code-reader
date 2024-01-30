@@ -15,7 +15,14 @@
   "files": [
     "dist"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "author": {
+    "name": "Juan Garcia",
+    "email": "jamdeveloper0@gmail.com",
+    "url": "https://github.com/JamDev0"
+  },
+  "description": "A qr code reader react component",
+  "license": "MIT",
   "scripts": {
     "build": "npm run build:css && vite build",
     "build:css": "tailwindcss -m -i ./src/styles/tailwind.css -o ./src/index.css",
