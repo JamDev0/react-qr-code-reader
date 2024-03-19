@@ -26,7 +26,7 @@ npm install react-qr-code-reader
 ### Just import it and done!
 
 ```TSX
-import { QrReader } from 'react-qr-code-reader'
+import { QrReader } from 'reactjs-qr-code-reader'
 
 export function SomeComponent() {
   const [read, setRead] = useState(true);
@@ -40,7 +40,7 @@ export function SomeComponent() {
 If a guide to the QrReader is needed, you can import `QrReaderViewFinder` and pass it to `<QrReader />` children.
 
 ```TSX
-import { QrReader, QrReaderViewFinder } from 'react-qr-code-reader'
+import { QrReader, QrReaderViewFinder } from 'reactjs-qr-code-reader'
 
 export function SomeComponent() {
   const [read, setRead] = useState(true);
